@@ -29,11 +29,13 @@ Note : Change interface name in line 145 of main.c, I kept it **lo** (loopback) 
 1. **Clone this repo and Navigate to directory**
       
 2. **Compile the project**
-   ```make
+   ```
+   make
    ``` 
 
 3. **Clean up existing TC hooks**
-   ```sudo tc qdisc del dev lo clsact
+   ```
+   sudo tc qdisc del dev lo clsact
    ``` 
    
 4. **Run executable**
@@ -42,12 +44,14 @@ Note : Change interface name in line 145 of main.c, I kept it **lo** (loopback) 
 	This logs details every 5 seconds
 	
 5. **To test : Start SSH session**
-   ```ssh <username>@localhost
+   ```
+   ssh <username>@localhost
    ``` 
 	Entry can be seen in ssh-audit terminal
    	
 6.  **To test : Stop SSH session in ssh terminal**
-   ```exit
+   ```
+exit
    ``` 
 	We can be seen entry removed in ssh-audit terminal
 	
