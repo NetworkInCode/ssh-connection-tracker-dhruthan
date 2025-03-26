@@ -26,32 +26,33 @@ Note : Change interface name in line 145 of main.c, I kept it **lo** (loopback) 
 
 ## Steps to run
 
-1. **Clone this repo and Navigate to directory**
+**1. Clone this repo and Navigate to directory**
       
-2. **Compile the project**
+**2. Compile the project**
    ```
    make
    ``` 
 
-3. **Clean up existing TC hooks**
+**3. Clean up existing TC hooks**
    ```
    sudo tc qdisc del dev lo clsact
    ``` 
    
-4. **Run executable**
-   ```sudo ./ssh-audit -i 5
+**4. Run executable**
+   ```
+   sudo ./ssh-audit -i 5
    ``` 
 	This logs details every 5 seconds
 	
-5. **To test : Start SSH session**
+**5. To test : Start SSH session**
    ```
    ssh <username>@localhost
    ``` 
 	Entry can be seen in ssh-audit terminal
    	
-6.  **To test : Stop SSH session in ssh terminal**
+**6.  To test : Stop SSH session in ssh terminal**
    ```
-exit
+   exit
    ``` 
 	We can be seen entry removed in ssh-audit terminal
 	
